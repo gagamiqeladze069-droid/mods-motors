@@ -1,27 +1,74 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
 body {
-    background-color: black;
-    color: yellow;
+    min-height: 100vh;
+    padding: 40px;
+
     font-family: Arial, sans-serif;
-    padding: 30px;
+    color: #00bfff;
+
+    /* ანიმაციური ფონი */
+    background: linear-gradient(
+        -45deg,
+        #000000,
+        #001a33,
+        #000814,
+        #003b5c,
+        #000000
+    );
+
+    background-size: 400% 400%;
+    animation: backgroundMove 10s ease infinite;
 }
 
+/* ფონის მოძრაობა */
+@keyframes backgroundMove {
+    0% {
+        background-position: 0% 50%;
+    }
+
+    50% {
+        background-position: 100% 50%;
+    }
+
+    100% {
+        background-position: 0% 50%;
+    }
+}
+
+/* მთავარი სათაური */
 h1 {
-    font-size: 40px;
-    margin-bottom: 30px;
+    color: #00bfff;
+    font-size: 45px;
+    margin-bottom: 35px;
+    text-shadow: 0 0 15px #00bfff;
 }
 
+/* ტექსტის ბლოკები */
 .text {
     max-width: 1200px;
 }
 
+/* ჩვეულებრივი ტექსტი */
 p {
+    color: #00bfff;
     font-size: 22px;
-    line-height: 1.6;
-    margin-bottom: 25px;
+    line-height: 1.7;
+    margin-bottom: 30px;
+
+    text-shadow: 0 0 5px rgba(0, 191, 255, 0.5);
 }
 
+/* ქვესათაურები */
 h2 {
-    font-size: 28px;
+    color: #00bfff;
+    font-size: 30px;
     margin-top: 30px;
     margin-bottom: 15px;
+
+    text-shadow: 0 0 12px #00bfff;
 }
